@@ -89,6 +89,10 @@ p {
   padding: 48px 0;
 }
 
+.section-title .accent{
+  color: var(--color-brend-dark);
+}
+
 address {
   font-style: normal;
 }
@@ -251,17 +255,26 @@ a {
 
 /*chefs-section*/
 .chefs-title {
-  max-width: 520px;
   margin: 0 auto 80px;
+  position: relative;
 }
 
 .chefs-title::before,
 .chefs-title::after{
-  display: block;
   width: 352px;
   border: 2px solid var(--color-brend-light);
   content: '';
+  position: absolute;
+  bottom: 24px;
 }
+.chefs-title::before{
+  left: 0;
+}
+
+.chefs-title::after{
+   right: 0;
+}
+
 
 .chefs-list{
   display: flex;
